@@ -60,7 +60,6 @@ class TodoListViewController: UITableViewController {
             // What WIll Happend When User Click The Button Add Item Button On UIAlart
             
             self.itemArray.append(textField.text!)
-            
             self.defaults.set(self.itemArray, forKey: "ToDoListArray")
             self.tableView.reloadData()
         }
